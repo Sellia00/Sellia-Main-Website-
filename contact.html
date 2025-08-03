@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sellia Team</title>
+  <!-- <link rel="stylesheet" href="css/sellia.css"> -->
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- الهيدر مع زر العودة -->
+  <header class="contact-header animate_animated animate_fadeInDown">
+    <div class="container">
+      <a href="index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+      <div class="logo">
+  <img src="1.png" alt="Sellia Logo" class="logo-img">
+        <span>Sellia</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- الهيرو -->
+    <section class="contact-hero animate_animated animate_fadeIn">
+      <div class="container">
+        <h1 class="animate_animated animatefadeInUp animate_delay-1s">Let's Connect!</h1>
+        <p class="animate_animated animatefadeInUp animate_delay-1s">Our team is ready to help you grow your business</p>
+      </div>
+    </section>
+
+    <!-- بطاقات التواصل -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- واتساب -->
+          <div class="contact-card whatsapp animate_animated animate_fadeInUp">
+            <div class="icon-container">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+20 1063523812</p>
+            <a href="https://wa.me/201063523812" class="btn" target="_blank">
+              Chat Now <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <!-- إيميل -->
+          <div class="contact-card email animate_animated animatefadeInUp animate_delay-1s">
+            <div class="icon-container">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>Sellia0921@gmail.com</p>
+            <a href="mailto:sellia0921@gmail.com" class="btn">
+              Send Email <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- تليفون -->
+          <div class="contact-card phone animate_animated animatefadeInUp animate_delay-2s">
+            <div class="icon-container">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+20 1063523812</p>
+            <a href="tel:+20 1063523812" class="btn">
+              Call Now <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر البسيط -->
+  <footer class="animate_animated animate_fadeIn">
+    <div class="container">
+      © 2025 Sellia. All Rights Reserved. <p>Developed By:<b class="x"> Marwan Ehab</b> </p>
+    </div>
+  </footer>
+
+  <!-- السكريبتات -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // تكوين الجزيئات
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#4a6fa5" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#4a6fa5", "opacity": 0.2, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+      }
+    });
+
+    // انيميشن التمرير
+    document.addEventListener("DOMContentLoaded", function() {
+      const animateOnScroll = function() {
+        const cards = document.querySelectorAll('.contact-card');
+        cards.forEach(card => {
+          const cardPosition = card.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (cardPosition < screenPosition) {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      animateOnScroll();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sellia</title>
+  <link rel="stylesheet" href="Sellia.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+</head>
+<body>
+
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <header class="animate__animated animate__fadeInDown">
+    <div class="container header-container">
+      <div class="logo">
+  <img src="1.png" alt="Sellia Logo" class="logo-img">
+  <span>Sellia</span>
+</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#join">Join Us</a>
+        <a href="arabic.html" class="btn">العربية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Grow Smarter with Sellia</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Contact us and increase your sales through our platform, which includes skilled marketers. No risk: <b class="m">you don’t pay anything until a sale is made</b>. Just guaranteed results.</p>
+        <a href="#join" class="btn animate__animated animate__fadeInUp animate__delay-2s">Start Collaborating</a>
+      </div>
+    </section>
+
+    <section id="about" class="section animate__animated animate__fadeIn">
+      <div class="container">
+        <h2>What is Sellia?</h2>
+        <p>Sellia is a comprehensive affiliate marketing system that connects retailers with a curated network of digital marketers specializing in electronics sales. We deliver measurable results with zero risk. Our business model is simple: you only pay commission after a confirmed sale, ensuring full alignment between your goals and ours. With Sellia, you're not hiring an agency — you're gaining a reliable sales partner. We operate with full transparency, structured systems, and a focus on optimizing every transaction to maximize your store’s revenue. Our marketers are carefully selected, professionally guided, and results-focused. Sellia empowers you to scale your business efficiently and without complications. It's all about structured growth through targeted affiliate marketing.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section animate__animated animate__fadeIn">
+      <div class="container">
+        <h2>Our Core Features</h2>
+        <div class="features-grid">
+          <div class="feature-card animate__animated animate__fadeInUp">
+            <h3>Marketer Network</h3>
+            <p>We provide skilled digital marketers ready to promote your products across social media, blogs, and various digital platforms.</p>
+          </div>
+          <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s">
+            <h3>Smart Protection System</h3>
+            <p>Our advanced tracking technology ensures fair commissions with full transparency. Every sale is accurately recorded and verified — no guessing, no disputes.</p>
+          </div>
+          <div class="feature-card animate__animated animate__fadeInUp animate__delay-2s">
+            <h3>No Setup Fees</h3>
+            <p>There are no upfront costs to join. You only pay commission when confirmed sales are made.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section animate__animated animate__fadeIn">
+      <div class="container">
+        <h2>Join Our Network</h2>
+        <p>If you're an electronics store owner or a specialized seller, Sellia offers you the ideal platform to maximize your potential.  
+Our smart affiliate marketing system creates a mutually beneficial partnership and gives you a real chance to achieve tangible results and actual growth in your sales.</p>
+        <a href="contact.html" class="btn animate__animated animate__pulse animate__infinite" target="_blank" rel="noopener noreferrer">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animate__animated animate__fadeIn">
+    <div class="container">
+      © 2025 Sellia. All rights reserved. Founded by <span class="S"><b>Marwan Ehab & Yassine Ahmed</b></span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Initialize particles
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#4a6fa5" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#4a6fa5", "opacity": 0.2, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+ 

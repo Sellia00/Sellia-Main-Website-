@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بفريق سيليا</title>
+  <link rel="stylesheet" href="arabic_contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- خلفية الجسيمات -->
+  <div id="particles-js"></div>
+
+  <!-- الهيدر مع زر العودة -->
+  <header class="contact-header animate_animated animate_fadeInDown">
+    <div class="container">
+      <a href="index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> العودة للرئيسية
+      </a>
+<div class="logo">
+  <img src="1.png" alt="Sellia Logo" class="logo-img">
+  <span>Sellia</span>
+</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- قسم الترحيب -->
+    <section class="contact-hero animate_animated animate_fadeIn">
+      <div class="container">
+        <h1 class="animate_animated animatefadeInUp animate_delay-1s">لنتواصل!</h1>
+        <p class="animate_animated animatefadeInUp animate_delay-1s">فريقنا جاهز لمساعدتك في تطوير عملك</p>
+      </div>
+    </section>
+
+    <!-- طرق التواصل -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- واتساب -->
+          <div class="contact-card whatsapp animate_animated animate_fadeInUp">
+            <div class="icon-container">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>واتساب</h3>
+            <p>+20 1063523812</p>
+            <a href="https://wa.me/201063523812" class="btn" target="_blank">
+              محادثة <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <!-- إيميل -->
+          <div class="contact-card email animate_animated animatefadeInUp animate_delay-1s">
+            <div class="icon-container">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>البريد الإلكتروني</h3>
+            <p>sellia0921@gmail.com</p>
+            <a href="mailto:sellia0921@gmail.com" class="btn">
+              إرسال بريد <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- هاتف -->
+          <div class="contact-card phone animate_animated animatefadeInUp animate_delay-2s">
+            <div class="icon-container">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>اتصال هاتفي</h3>
+            <p>+20 1063523812</p>
+            <a href="tel:+20 1063523812" class="btn">
+              اتصل الآن <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="animate_animated animate_fadeIn">
+    <div class="container">
+      © 2025 سيليا. جميع الحقوق محفوظة. <p>طور بواسطة: <b class="x">مروان إيهاب</b></p>
+    </div>
+  </footer>
+
+  <!-- السكريبتات -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // تكوين الجسيمات
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#4a6fa5" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#4a6fa5", "opacity": 0.2, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+      }
+    });
+
+    // حركة العناصر عند التمرير
+    document.addEventListener("DOMContentLoaded", function() {
+      const animateOnScroll = function() {
+        const cards = document.querySelectorAll('.contact-card');
+        cards.forEach(card => {
+          const cardPosition = card.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (cardPosition < screenPosition) {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }
+        });
+      };
+
+      window.addEventListener('scroll', animateOnScroll);
+      animateOnScroll();
+    });
+  </script>
+</body>
+</html>
